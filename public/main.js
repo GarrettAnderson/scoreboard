@@ -24,8 +24,16 @@ const increaseNumberTeam2 = () => {
 
 // when user clicks 'Subtract 1' button, subtract counter by 1
 
-// when user inputs a number and clicks 'Update' button, <p> tag/ the variable counter changes
+const subtractNumberTeam1 = () => {
+    team1Score = team1Score - 1
+    document.querySelector('.team1Score').textContent = team1Score
+}
+const subtractNumberTeam2 = () => {
+    team2Score = team2Score - 1
+    document.querySelector('.team2Score').textContent = team2Score
+}
 
+// Update Team Name
 const updateTeam1Name = () => {
     // get inner HTML and store in variable team1Name
     team1Name = document.getElementById('updated-name-team-1').value
@@ -36,9 +44,11 @@ const updateTeam1Name = () => {
 }
 
 const updateTeam2Name = () => {
+    // get inner HTML and store in variable team1Name
     team2Name = document.querySelector('.updated-name-team-2').value
     console.log(team2Name)
 
+    // update HTML with new variable
     document.querySelector('.team2Name').textContent = team2Name
 }
 
@@ -48,9 +58,13 @@ document.addEventListener('DOMContentLoaded', main)
 document.querySelector('.team-1-add-1-button').addEventListener('click', increaseNumberTeam1)
 document.querySelector('.team-2-add-2-button').addEventListener('click', increaseNumberTeam2)
 
-// Update team score
+// Update team name
 document.querySelector('.update-team-1-name').addEventListener('click', updateTeam1Name)
 document.querySelector('.update-team-2-name').addEventListener('click', updateTeam2Name)
+
+// Subtract team score
+document.querySelector('.team-1-subtract-1-button').addEventListener('click', subtractNumberTeam1)
+document.querySelector('.team-2-subtract-2-button').addEventListener('click', subtractNumberTeam2)
 
 // Run increaseNumber functions when 'Add 1' button is clicked
 // document.addEventListener('click',)
