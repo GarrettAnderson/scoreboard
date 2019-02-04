@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Scoreboard</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class='hello-world'></h1>
+    <h1>My Score Board</h1>
+    <section class="score-area">
+      <section class="team1">
+        <h2 class="team1Name"></h2>
+        <p class="team1Score"></p>
+      </section>
+      <section class="team2">
+        <h2 class="team2Name"></h2>
+        <p class="team2Score"></p>
+      </section>
+    </section>
+    <section class="update-score">
+      <section class="team1">
+        <section class="team-name">
+          update team 1 name
+          <input type="text" id="updated-name-team-1"/>
+          <button class="update-team-1-name" id="update-button-team-1">Update</button>
+        </section>
+        <section>
+          update team 1 score
+          <button class="team-1-add-1-button" id="add-button-team-1">add 1</button>
+          <button class="team-1-subtract-1-button" id="subtract-button-team-1">subtract 1</button>
+        </section>
+      </section>
+      <section class="team2">
+        <section class="team-name">
+          update team 2 name
+          <input type="text" class="updated-name-team-2"/>
+          <button class="update-team-2-name" id="update-button-team-2">Update</button>
+        </section>
+        <section>
+          update team 2 score
+          <button class="team-2-add-2-button" id="add-button-team-2">add 1</button>
+          <button class="team-2-subtract-2-button" id="subtract-button-team-2">subtract 1</button>
+        </section>
+      </section>
+    </section>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
