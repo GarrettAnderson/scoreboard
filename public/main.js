@@ -32,10 +32,10 @@ const subtractNumberTeam1 = () => {
         team1Score = 0
         document.querySelector('.team1Score').textContent = team1Score
     }
-    // if (team1Score >= 0) {
-    //     team1Score === 0
-    //     document.querySelector('.team1Score').textContent = team1Score
-    // }
+    if (team1Score >= 0) {
+        team1Score === 0
+        document.querySelector('.team1Score').textContent = team1Score
+    }
 }
 const subtractNumberTeam2 = () => {
     if (team2Score >= 1) {
