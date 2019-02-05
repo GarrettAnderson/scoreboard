@@ -32,7 +32,7 @@ const increaseNumberTeam2 = () => {
     team2Score++
   } else if (team2Score <= 20) {
     team2Score++
-    document.querySelector('.team-2-subtract-2-button').classList.add('hide-button')
+    document.querySelector('.team-2-add-2-button').classList.add('hide-button')
     alert(team2Name + ' won!')
   }
   document.querySelector('.team2Score').textContent = team2Score
@@ -41,13 +41,13 @@ const increaseNumberTeam2 = () => {
 // when user clicks 'Subtract 1' button, subtract counter by 1
 
 const subtractNumberTeam1 = () => {
-  if (team1Score >= 1) {
+  if (team1Score > 1) {
     team1Score = team1Score - 1
-    document.querySelector('.team1Score').textContent = team1Score
   } else {
     team1Score = 0
-    document.querySelector('.team1Score').textContent = team1Score
+    document.querySelector('.team-1-subtract-1-button').classList.add('hide-button')
   }
+  document.querySelector('.team1Score').textContent = team1Score
 }
 // if (team1Score >= 0) {
 //   team1Score === 0
@@ -57,11 +57,11 @@ const subtractNumberTeam1 = () => {
 const subtractNumberTeam2 = () => {
   if (team2Score >= 1) {
     team2Score = team2Score - 1
-    document.querySelector('.team2Score').textContent = team2Score
   } else {
     team2Score = 0
-    document.querySelector('.team2Score').textContent = team2Score
+    document.querySelector('.team-2-subtract-2-button').classList.add('hide-button')
   }
+  document.querySelector('.team2Score').textContent = team2Score
 }
 
 // Update Team Name
@@ -83,6 +83,22 @@ const updateTeam2Name = () => {
   document.querySelector('.team2Name').textContent = team2Name
 }
 
+const resetTeam1Score = () => {
+  team1Score = 0
+  document.querySelector('.team1Name').textContent = 'Team 1'
+  document.querySelector('.team1Score').textContent = team1Score
+  document.querySelector('.team-1-add-1-button').classList.remove('hide-button')
+  document.querySelector('.team-1-subtract-1-button').classList.remove('hide-button')
+}
+
+const resetTeam2Score = () => {
+  team2Score = 0
+  document.querySelector('.team2Name').textContent = 'Team 2'
+  document.querySelector('.team2Score').textContent = team1Score
+  document.querySelector('.team-2-add-2-button').classList.remove('hide-button')
+  document.querySelector('.team-2-subtract-2-button').classList.remove('hide-button')
+}
+
 // const updatePeriod = () => {
 //     gamePeriod++
 //     gamePeriod = document.querySelector('.period-number').textContent = gamePeriod
@@ -101,6 +117,10 @@ document.querySelector('.update-team-2-name').addEventListener('click', updateTe
 // Subtract team score
 document.querySelector('.team-1-subtract-1-button').addEventListener('click', subtractNumberTeam1)
 document.querySelector('.team-2-subtract-2-button').addEventListener('click', subtractNumberTeam2)
+
+// Reset team score
+document.querySelector('.team-1-reset-1-button').addEventListener('click', resetTeam1Score)
+document.querySelector('.team-2-reset-2-button').addEventListener('click', resetTeam2Score)
 
 // Increase period number
 // document.querySelector('.period-increase-button').addEventListener('click', updatePeriod)
