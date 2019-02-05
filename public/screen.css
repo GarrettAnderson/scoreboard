@@ -16,16 +16,25 @@ body {
 
 h1 {
     text-align: center;
+    color: #fff;
 }
 
 .score-area {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.score-area h2 {
+    text-align: center;
+    color: #fff;
 }
 
 .score-area p {
     font-size: 3rem;
     text-align: center;
+    padding: 2rem 10rem;
+    color: #fff;
 }
 
 .score-area section {
@@ -45,4 +54,9 @@ h1 {
 
 .update-score section {
     margin: 1rem;
+}
+
+.score-area section {
+    border: 1px solid #8cab61;
+    border-radius: 2%;
 }
