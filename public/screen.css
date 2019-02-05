@@ -9,6 +9,9 @@ html {
 body {
     margin: 0;
     min-height: 100%;
+    background-image: url('images/grass2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -22,6 +25,11 @@ h1 {
 
 .score-area p {
     font-size: 3rem;
+    text-align: center;
+}
+
+.score-area section {
+    background-color: #c8d9ab;
 }
 
 .update-score {
