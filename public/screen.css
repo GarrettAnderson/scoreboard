@@ -98,6 +98,10 @@ input {
     padding: 0.5rem;
 }
 
+.hide-button {
+    display: none;
+}
+
 /* Tablet View Styles */
 /* #add-button-team-1 {
     margin-left: 19%;
