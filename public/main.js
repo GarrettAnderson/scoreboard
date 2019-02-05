@@ -14,6 +14,7 @@ const main = () => {
 
 // Team 1: when user clicks 'Add 1' button, increase counter by 1 for Team 1
 const increaseNumberTeam1 = () => {
+  team1Name = document.querySelector('.team2Name').textContent
   if (team1Score < 20) {
     team1Score++
   } else if (team1Score === 20) {
@@ -26,17 +27,15 @@ const increaseNumberTeam1 = () => {
 
 // Team 2: when user clicks 'Add 1' button, increase counter by 1 for Team 2
 const increaseNumberTeam2 = () => {
-  if (team2Score >= 21) {
-    team2Name = document.querySelector('.team2Name').textContent
-    document.querySelector('.team-2-add-2-button').classList.add('hide-button')
-    document.querySelector('.team-2-subtract-2-button').classList.add('hide-button')
-    alert(team2Name + ' won!')
+  team2Name = document.querySelector('.team2Name').textContent
+  if (team2Score < 20) {
+    team2Score++
   } else if (team2Score <= 20) {
     team2Score++
-    document.querySelector('.team2Score').textContent = team2Score
-  } else {
-    document.querySelector('.team2Score').textContent = team2Score
+    document.querySelector('.team-2-subtract-2-button').classList.add('hide-button')
+    alert(team2Name + ' won!')
   }
+  document.querySelector('.team2Score').textContent = team2Score
 }
 
 // when user clicks 'Subtract 1' button, subtract counter by 1
