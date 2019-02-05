@@ -19,6 +19,9 @@ h1 {
     color: #fff;
 }
 
+input {
+    padding: 0.5rem;
+}
 .score-area {
     display: flex;
     justify-content: center;
@@ -33,7 +36,6 @@ h1 {
 .score-area p {
     font-size: 3rem;
     text-align: center;
-    padding: 2rem 10rem;
     color: #fff;
 }
 
@@ -45,33 +47,58 @@ h1 {
 
 .update-score .team-name {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .update-score section {
     margin: 1rem;
     color: #fff;
+    margin-right: 0rem;
 }
 
 .score-area section {
     border: 1px solid #8cab61;
     border-radius: 2%;
     background-color: #c8d9ab;
+    width: 35%;
 }
 
 .update-score button {
     background-color: #8cab61;
     color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .team-name {
-    background-color: rgb(153, 136, 98, 0.5);
+    background-color: rgb(153, 136, 98, 0.8);
+}
+
+.team1 section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.team2 section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
 }
 
 .team1 section:nth-child(2) span {
-    background-color: rgb(153, 136, 98, 0.5);
+    background-color: rgb(153, 136, 98, 0.8);
+    padding: 0.5rem;
 }
 
 .team2 section:nth-child(2) span {
-    background-color: rgb(153, 136, 98, 0.5);
+    background-color: rgb(153, 136, 98, 0.8);
+    padding: 0.5rem;
 }
+
+/* Tablet View Styles */
+/* #add-button-team-1 {
+    margin-left: 19%;
+}
+
+#add-button-team-2 {
+    margin-left: 19%;
+} */
