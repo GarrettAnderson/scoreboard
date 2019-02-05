@@ -40,7 +40,7 @@ h1 {
 .update-score {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .update-score .team-name {
