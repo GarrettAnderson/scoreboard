@@ -25,11 +25,12 @@ const increaseNumberTeam2 = () => {
 // when user clicks 'Subtract 1' button, subtract counter by 1
 
 const subtractNumberTeam1 = () => {
-    if (team1Score >= 0) {
+    if (team1Score >= 1) {
         team1Score = team1Score - 1
         document.querySelector('.team1Score').textContent = team1Score
     } else {
-        document.querySelector('.team1Score').textContent = 0
+        team1Score = 0
+        document.querySelector('.team1Score').textContent = team1Score
     }
     // if (team1Score >= 0) {
     //     team1Score === 0
@@ -37,8 +38,13 @@ const subtractNumberTeam1 = () => {
     // }
 }
 const subtractNumberTeam2 = () => {
-    team2Score = team2Score - 1
-    document.querySelector('.team2Score').textContent = team2Score
+    if (team2Score >= 1) {
+        team2Score = team2Score - 1
+        document.querySelector('.team2Score').textContent = team2Score
+    } else {
+        team2Score = 0
+        document.querySelector('.team2Score').textContent = team2Score
+    }
 }
 
 // Update Team Name
