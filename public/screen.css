@@ -37,10 +37,6 @@ h1 {
     color: #fff;
 }
 
-.score-area section {
-    background-color: #c8d9ab;
-}
-
 .update-score {
     display: flex;
     flex-direction: row;
@@ -54,9 +50,28 @@ h1 {
 
 .update-score section {
     margin: 1rem;
+    color: #fff;
 }
 
 .score-area section {
     border: 1px solid #8cab61;
     border-radius: 2%;
+    background-color: #c8d9ab;
+}
+
+.update-score button {
+    background-color: #8cab61;
+    color: #fff;
+}
+
+.team-name {
+    background-color: rgb(153, 136, 98, 0.5);
+}
+
+.team1 section:nth-child(2) span {
+    background-color: rgb(153, 136, 98, 0.5);
+}
+
+.team2 section:nth-child(2) span {
+    background-color: rgb(153, 136, 98, 0.5);
 }
