@@ -94,6 +94,10 @@ input {
     padding: 0.5rem;
 }
 
+.team-name span {
+    padding: 0.5rem;
+}
+
 /* Tablet View Styles */
 /* #add-button-team-1 {
     margin-left: 19%;
