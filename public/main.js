@@ -92,7 +92,7 @@ const resetTeam1Score = () => {
   document.querySelector('.team-1-add-1-button').classList.remove('hide-button')
   document.querySelector('.team-1-subtract-1-button').classList.remove('hide-button')
   document.querySelector('.isWinner').textContent = ''
-  document.querySelector('.team1').classList.toggle('winner')
+  document.querySelector('.team1').classList.remove('winner')
 }
 
 const resetTeam2Score = () => {
