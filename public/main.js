@@ -22,7 +22,6 @@ const increaseNumberTeam1 = () => {
     document.querySelector('.isWinner').textContent = 'WINNER!!'
     document.querySelector('.team1').classList.add('winner')
     document.querySelector('.team-1-add-1-button').classList.add('hide-button')
-    // alert(team1Name + ' won!')
   }
   document.querySelector('.team1Score').textContent = team1Score
 }
@@ -34,8 +33,9 @@ const increaseNumberTeam2 = () => {
     team2Score++
   } else if (team2Score <= 20) {
     team2Score++
+    document.querySelector('.isWinner2').textContent = 'WINNER!!'
+    document.querySelector('.team2').classList.add('winner')
     document.querySelector('.team-2-add-2-button').classList.add('hide-button')
-    alert(team2Name + ' won!')
   }
   document.querySelector('.team2Score').textContent = team2Score
 }
@@ -101,6 +101,8 @@ const resetTeam2Score = () => {
   document.querySelector('.team2Score').textContent = team1Score
   document.querySelector('.team-2-add-2-button').classList.remove('hide-button')
   document.querySelector('.team-2-subtract-2-button').classList.remove('hide-button')
+  document.querySelector('.isWinner2').textContent = ''
+  document.querySelector('.team2').classList.remove('winner')
 }
 
 const increasePeriod = () => {
