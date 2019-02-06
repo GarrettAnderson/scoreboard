@@ -17,6 +17,7 @@ body {
   background-image: url('images/grass2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  align-items: center;
 }
 
 h1 {
@@ -29,8 +30,9 @@ input {
 }
 .score-area {
   display: flex;
-  justify-content: center;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .score-area h2 {
@@ -46,8 +48,10 @@ input {
 
 .update-score {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  width: 90%;
+  margin-top: 2rem;
 }
 
 .update-score .team-name {
@@ -56,16 +60,15 @@ input {
 }
 
 .update-score section {
-  margin: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
   color: #fff;
-  margin-right: 0rem;
 }
 
 .score-area section {
   border: 1px solid #8cab61;
   border-radius: 2%;
   background-color: rgb(200, 217, 171, 0.8);
-  width: 35%;
+  width: 40%;
 }
 
 .update-score button {
@@ -119,13 +122,13 @@ input {
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem;
-  width: 15%;
+  width: 100%;
 }
 
 .period-tracker section {
   border-radius: 2%;
   background-color: rgb(200, 217, 171, 0.8);
-  width: 15%;
+  width: 100%;
   text-align: center;
   margin-bottom: 0px;
   color: #fff;
