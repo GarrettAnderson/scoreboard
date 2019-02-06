@@ -107,12 +107,13 @@ const resetTeam2Score = () => {
 
 const increasePeriod = () => {
   gamePeriod++
-  gamePeriod = document.querySelector('.period-number').textContent
+  document.querySelector('.period-number').textContent = gamePeriod
+  console.log(gamePeriod)
 }
 
 const decreasePeriod = () => {
   gamePeriod--
-  gamePeriod = document.querySelector('.period-number').textContent = gamePeriod
+  document.querySelector('.period-number').textContent = gamePeriod
 }
 
 document.addEventListener('DOMContentLoaded', main)
@@ -133,9 +134,9 @@ document.querySelector('.team-2-subtract-2-button').addEventListener('click', su
 document.querySelector('.team-1-reset-1-button').addEventListener('click', resetTeam1Score)
 document.querySelector('.team-2-reset-2-button').addEventListener('click', resetTeam2Score)
 
-// Increase period number
+// Increase/Decrease period number
 document.querySelector('.period-increase-button').addEventListener('click', increasePeriod)
-document.querySelector('.period-increase-button').addEventListener('click', decreasePeriod)
+document.querySelector('.period-decrease-button').addEventListener('click', decreasePeriod)
 
 // Run increaseNumber functions when 'Add 1' button is clicked
 // document.addEventListener('click',)
