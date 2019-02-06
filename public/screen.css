@@ -152,9 +152,18 @@ button {
 #add-button-team-2 {
     margin-left: 19%;
 } */
-@media only screen and(min-width: 768px) and(max-width: 1024px) {
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .score-area {
     justify-content: space-evenly;
+  }
+
+  .update-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    margin-top: 2rem;
   }
 
   .update-score .team-name {
@@ -180,9 +189,12 @@ button {
     justify-content: space-evenly;
   }
 
-  .update-score .team-name {
+  .update-score {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    margin-top: 2rem;
   }
 
   .team1 section:nth-child(2) {
@@ -195,5 +207,10 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .update-score .team-name {
+    display: flex;
+    flex-direction: row;
   }
 }

@@ -147,31 +147,3 @@ document.querySelector('.team-2-reset-2-button').addEventListener('click', reset
 // Increase/Decrease period number
 document.querySelector('.period-increase-button').addEventListener('click', increasePeriod)
 document.querySelector('.period-decrease-button').addEventListener('click', decreasePeriod)
-
-// Run increaseNumber functions when 'Add 1' button is clicked
-// document.addEventListener('click',)
-// var addTeam1Score = document.getElementById('add-button-team-1')
-// addTeam1Score.onclick = increaseNumberTeam1()
-
-// document.addEventListener('click', increaseNumberTeam2);
-
-// document.addEventListener('click', increaseNumberTeam2);
-
-// Team 1: when user clicks 'Add 1' button, increase counter by 1 for Team 1
-// const increaseNumberTeam1 = () =>
-//  {
-//   if (team1Score > 20) {
-//     team1Name = document.querySelector('.team1Name').textContent
-//     console.log(team1Name)
-//     // disble button - add css class to hide button
-//     document.querySelector('.team-1-add-1-button').classList.add('hide-button')
-//     document.querySelector('.team-1-subtract-1-button').classList.add('hide-button')
-//     // set alert if team won
-//     alert(team1Name + ' won!')
-//   } else if (team1Score < 21) {
-//     team1Score++ // counter = counter + 1
-//     document.querySelector('.team1Score').textContent = team1Score
-//   } else {
-//     document.querySelector('.team1Score').textContent = team1Score
-//   }
-// }
