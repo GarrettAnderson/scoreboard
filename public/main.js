@@ -15,8 +15,10 @@ const main = () => {
 // Team 1: when user clicks 'Add 1' button, increase counter by 1 for Team 1
 const increaseNumberTeam1 = () => {
   team1Name = document.querySelector('.team2Name').textContent
+  gamePeriod = document.querySelector('.period-number').textContent
   if (team1Score < 20) {
     team1Score++
+    console.log(gamePeriod)
   } else if (team1Score === 20) {
     team1Score++
     document.querySelector('.isWinner').textContent = 'WINNER!!'
@@ -106,13 +108,21 @@ const resetTeam2Score = () => {
 }
 
 const increasePeriod = () => {
-  gamePeriod++
+  if (gamePeriod < 4) {
+    gamePeriod++
+  } else {
+    return gamePeriod
+    // console.log(gamePeriod)
+  }
   document.querySelector('.period-number').textContent = gamePeriod
-  console.log(gamePeriod)
 }
 
 const decreasePeriod = () => {
-  gamePeriod--
+  if (gamePeriod >= 1) {
+    gamePeriod--
+  } else {
+    gamePeriod = 0
+  }
   document.querySelector('.period-number').textContent = gamePeriod
 }
 
