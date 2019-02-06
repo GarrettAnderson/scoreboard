@@ -59,7 +59,7 @@ input {
 .score-area section {
   border: 1px solid #8cab61;
   border-radius: 2%;
-  background-color: #c8d9ab;
+  background-color: rgb(200, 217, 171, 0.8);
   width: 35%;
 }
 
@@ -117,14 +117,19 @@ input {
   width: 15%;
 }
 
-.period-tracker p {
+.period-tracker section {
   border-radius: 2%;
-  background-color: #c8d9ab;
+  background-color: rgb(200, 217, 171, 0.8);
   width: 15%;
   text-align: center;
   margin-bottom: 0px;
   color: #fff;
   padding: 0.5rem 0rem;
+}
+
+.winner {
+  border: 5px solid rgb(202, 120, 194) !important;
+  background-color: rgb(202, 120, 194, 0.7) !important;
 }
 /* Tablet View Styles */
 /* #add-button-team-1 {

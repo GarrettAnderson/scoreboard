@@ -1,15 +1,15 @@
+let gamePeriod = 0
 let team1Score = 0
 let team2Score = 0
 let team1Name
 let team2Name
-let gamePeriod = 0
 
 const main = () => {
-  document.querySelector('.team1Score').textContent = 0
-  document.querySelector('.team2Score').textContent = 0
   document.querySelector('.team1Name').textContent = 'Team 1'
   document.querySelector('.team2Name').textContent = 'Team 2'
-  document.querySelector('gamePeriod').textContent = 0
+  document.querySelector('.team1Score').textContent = 0
+  document.querySelector('.team2Score').textContent = 0
+  document.querySelector('.period-number').textContent = 0
 }
 
 // Team 1: when user clicks 'Add 1' button, increase counter by 1 for Team 1
@@ -19,8 +19,10 @@ const increaseNumberTeam1 = () => {
     team1Score++
   } else if (team1Score === 20) {
     team1Score++
+    document.querySelector('.isWinner').textContent = 'WINNER!!'
+    document.querySelector('.team1').classList.add('winner')
     document.querySelector('.team-1-add-1-button').classList.add('hide-button')
-    alert(team1Name + ' won!')
+    // alert(team1Name + ' won!')
   }
   document.querySelector('.team1Score').textContent = team1Score
 }
@@ -89,6 +91,8 @@ const resetTeam1Score = () => {
   document.querySelector('.team1Score').textContent = team1Score
   document.querySelector('.team-1-add-1-button').classList.remove('hide-button')
   document.querySelector('.team-1-subtract-1-button').classList.remove('hide-button')
+  document.querySelector('.isWinner').textContent = ''
+  document.querySelector('.team1').classList.toggle('winner')
 }
 
 const resetTeam2Score = () => {
@@ -101,7 +105,7 @@ const resetTeam2Score = () => {
 
 const increasePeriod = () => {
   gamePeriod++
-  gamePeriod = document.querySelector('.period-number').textContent = gamePeriod
+  gamePeriod = document.querySelector('.period-number').textContent
 }
 
 const decreasePeriod = () => {
